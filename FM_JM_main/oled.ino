@@ -155,6 +155,6 @@ void oledfreq() {
   display.print("JAMMING...");
 
   display.setCursor(10, 55);
-  display.print(" by Ayoub & Ilyes");
+  display.print(" by issoupewd");
   display.display();
 }
