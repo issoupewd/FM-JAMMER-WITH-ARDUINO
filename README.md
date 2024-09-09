@@ -2,9 +2,14 @@
 
 ![Real Picture of the FM Jammer](real_pic.jpg)
 
+## ⚠️ Warning
+
+**This is a low-range jammer, but it could interfere with other broadcasts. Please be careful when using it.**
+
 This project is an FM jammer based on Arduino programming language, using the LGT8F328P microcontroller, the SI4713 FM transmitter module, a 0.96" OLED display, and a rotary encoder.
 
 In this repository, you will find the schematic of the circuit and the code required for this project.
+
 
 ![Circuit Diagram](circuit.png)
 
@@ -37,3 +42,7 @@ The second block of conditions is controlled by the rotation of the encoder:
 To ensure that both the frequency and the index are within the desired range of [88–108] MHz for the frequency and 0 to 12 for the index, if it exceeds this range, it will revert to the minimum value; if it is below, it will jump to the maximum value.
 
 The final condition determines the chosen mode. If there is a click on the encoder, the frequency will be that of the channel corresponding to the index; otherwise, it will be the one obtained by rotating the encoder. The obtained frequency value is then sent to the radio module, thus jamming that frequency, and displayed on the OLED screen.
+
+##  Issue
+
+This jammer can only jam one channel at a time. If you can provide any additional modifications or improvements, that would be greatly appreciated.
